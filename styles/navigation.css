@@ -83,8 +83,6 @@ main{
     display: none;
 }
 
-
-
 .has-submenu ul {
     position: fixed;
     border-radius: 0px 20px 20px 0px;
@@ -95,8 +93,7 @@ main{
 
 .has-submenu ul li {
     background-color:rgba(214, 214, 226, 0.784);
-    /* padding: 0.5rem; */
-    /* line-height: 1.5; */
+
 }
 
 .has-submenu ul li a {
