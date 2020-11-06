@@ -7,9 +7,9 @@ window.addEventListener("scroll", function(){
     }
 })
 
-const mobileNav = document.getElementById('mobileNav');
+const mobileNavButton = document.getElementById('mobileNavButton');
 
-mobileNav.addEventListener('click', ()=> {
+mobileNavButton.addEventListener('click', ()=> {
     const mainNav = document.querySelector('.mainNav');
     setTimeout(function () {
             mainNav.classList.toggle("displayBlock");

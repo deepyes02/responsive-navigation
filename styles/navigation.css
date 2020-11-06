@@ -3,6 +3,7 @@
     transition: 0.6s ease-in;
 }
 
+
 .sticky {
     position:sticky;
     top:0;
@@ -32,6 +33,10 @@
 }
 
 @media only screen and (min-width: 978px){
+    #mobileNavButton{
+        display:none;
+    }
+    
     @keyframes oxy-menu-rotx {
         from {
             opacity: 0;
@@ -62,7 +67,7 @@
 }
 
 .mainNav ul li a:hover{
-    background-color: rgb(66, 219, 219);
+    background-color: rgb(41, 114, 114);
     transition: 0.4s ease;
 }
 .mainNav > ul li ul { 
@@ -79,7 +84,6 @@
 
 .has-submenu ul li {
     background-color:rgba(214, 214, 226, 0.784);
-
 }
 
 .has-submenu ul li a {
@@ -89,27 +93,6 @@
     color:black;
     padding: 0.6rem 0.2rem;
 }
-
-.info-flex{
-    display:flex;
-    width: 300px;
-    max-width: 500px;
-    padding: 0.2rem 0.3rem;
-}
-
-.info-flex span,
-.info-flex img {
-    padding: 0.5rem 0.3rem;
-}
-
-.info-flex span{
-    font-style:italic;
-    font-size:0.9rem;
-}
-.info-flex img{
-    border-radius: 15px;
-}
-
 
 /* main header  */
 #main-header{
@@ -124,8 +107,4 @@
     flex-direction: column;
     align-items: center;
     align-content: center;
-}
-
-ul, li {
-    margin: 0;
 }
