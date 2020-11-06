@@ -1,0 +1,148 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+body{
+    font-family:sans-serif;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+
+main{
+    line-height: 2.5;
+    padding: 20px;
+}
+
+@keyframes oxy-menu-rotx {
+	from {
+		opacity: 0;
+		transform: rotatex(-90deg);
+	}
+	to {
+		opacity: 1;
+		transform: rotatex(0deg);
+	}
+}
+
+.mainNav {
+    background-color: rgb(115, 212, 159);
+    transition: 0.6s ease-in;
+}
+
+.sticky {
+    position:sticky;
+    top:0;
+    justify-content: flex-start;
+    transition: 0.6s ease-out;
+    z-index:+9;
+}
+
+.mainNav ul {
+    perspective: 200px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+.mainNav ul li {
+    margin: 0.7rem 0.2rem 1rem 0.2rem;
+}
+
+.mainNav ul li a {
+    font-size: 1.5rem;
+    text-decoration:none;
+    color:white;
+    margin: auto 1rem;
+    padding: 0.4rem;
+}
+
+@media only screen and (min-width: 978px){
+    .mainNav ul li a:hover{
+        background-color: rgb(66, 219, 219);
+        transition: 0.4s ease;
+    }
+    .mainNav > ul li:hover ul { 
+        display: block;
+        animation-name:oxy-menu-rotx;
+        transform-origin: top;
+        animation-duration:0.5s;
+    }
+    .has-submenu ul {
+        position: fixed;
+        border-radius: 0px 20px 20px 0px;
+        z-index:-1;
+        background-color:rgba(218, 219, 216, 0.993);
+        box-shadow: 3px 0px rgb(98, 98, 202);
+    }
+}
+
+.mainNav ul li a:hover{
+    background-color: rgb(66, 219, 219);
+    transition: 0.4s ease;
+}
+.mainNav > ul li ul { 
+    display: none;
+}
+
+
+
+.has-submenu ul {
+    position: fixed;
+    border-radius: 0px 20px 20px 0px;
+    z-index:-1;
+    background-color:rgba(218, 219, 216, 0.993);
+    box-shadow: 3px 0px rgb(98, 98, 202);
+}
+
+.has-submenu ul li {
+    background-color:rgba(214, 214, 226, 0.784);
+    /* padding: 0.5rem; */
+    /* line-height: 1.5; */
+}
+
+.has-submenu ul li a {
+    font-size:1rem;
+    font-weight:500;
+    position:relative;
+    color:black;
+    padding: 0.6rem 0.2rem;
+}
+
+.info-flex{
+    display:flex;
+    width: 300px;
+    max-width: 500px;
+    padding: 0.2rem 0.3rem;
+}
+
+.info-flex span,
+.info-flex img {
+    padding: 0.5rem 0.3rem;
+}
+
+.info-flex span{
+    font-style:italic;
+    font-size:0.9rem;
+}
+.info-flex img{
+    border-radius: 15px;
+}
+
+
+/* main header  */
+#main-header{
+    padding: 1rem;
+    display:flex;
+    align-items: flex-end;
+}
+
+#main-header .brand{
+    margin: 0 1rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+ul, li {
+    margin: 0;
+}
