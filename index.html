@@ -5,16 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Navigation</title>
+  
   <link rel="stylesheet" href="styles/navigation.css">
   <link rel="stylesheet" href="styles/mobile-nav.css">
+  <link rel="stylesheet" href="styles/uikit.min.css">
 
 </head>
   <body>
     <div id="main-header">
       <div class="brand">
-        <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-x-diamond-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" d="M9.05.435c-.58-.58-1.52-.58-2.1 0L4.047 3.339 8 7.293l3.954-3.954L9.049.435zm3.61 3.611L8.708 8l3.954 3.954 2.904-2.905c.58-.58.58-1.519 0-2.098l-2.904-2.905zm-.706 8.615L8 8.707l-3.954 3.954 2.905 2.904c.58.58 1.519.58 2.098 0l2.905-2.904zm-8.615-.707L7.293 8 3.339 4.046.435 6.951c-.58.58-.58 1.519 0 2.098l2.904 2.905z"/>
-        </svg>
+        <img src="images/logo.png">
         <h3>An Exotic Travel Company</h3>
       </div>
       <div>
@@ -33,7 +33,7 @@
         <a href="/index.html" aria-haspopup="true" aria-expanded="false">
           Everest
         </a>
-        <ul class="submenu">
+        <ul>
           <li><a href="/index.html">Everest Base Camp Trek</a></li>
           <li><a href="/index.html">Gokyo Ri Trek</a></li>
           <li><a href="/index.html">Three Passes Trek</a></li>
@@ -73,10 +73,29 @@
   </nav>
 </div>
 
-    <section class="banner">
-      <picture>
-        <img src="images/background.jpg" height="100%" width="100%">
-      </picture>
+    <section class="banner" id="banner">
+      <div class="uk-child-width-1@m" uk-grid>
+        <div>    
+            <div class="uk-position-relative uk-visible-toggle uk-dark" tabindex="-1" uk-slideshow="autoplay:true, autoplay-interval:1000, pause-on-hover: false">
+                <ul class="uk-slideshow-items">
+                    <li>
+                        <img src="images/mountain.jpg" alt="" uk-cover>
+                    </li>
+                    <li>
+                        <img src="images/saint.jpg" alt="" uk-cover>
+                    </li>
+                    <li>
+                        <img src="images/sunshine.png" alt="" uk-cover>
+                    </li>
+                </ul>
+    
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+    
+            </div>
+    
+        </div>
+    </div>
     </section>
     <main>
 
@@ -142,6 +161,8 @@
         earum hic in odit consequatur atque, maiores illum, modi nobis!</p>
 
     </main>
+    <script src="scripts/uikit.min.js"></script>
+    <script src="scripts/uikit-icons.min.js"></script>
     <script src="scripts/script.js"></script>
   </body>
 
